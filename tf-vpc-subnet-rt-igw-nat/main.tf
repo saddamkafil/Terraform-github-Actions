@@ -109,7 +109,7 @@ resource "aws_route_table_association" "private_rta_2" {
   route_table_id = aws_route_table.ecs_private_rt.id
 }
 
-# Allocate an Elastic IP address for the NAT Gateway
+# Allocate an Elastic IP address for the NAT Gateway.
 resource "aws_eip" "ecs_eip" {
   vpc = true
 }
